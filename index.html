@@ -13,14 +13,61 @@
 *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(135deg,#eef5f8,#e7edf2);color:var(--ink)}
 header{padding:28px 22px 18px;background:linear-gradient(135deg,var(--blue),#123b55);color:white;box-shadow:var(--shadow)}
 header h1{margin:0;font-size:clamp(1.7rem,3vw,3rem);letter-spacing:.02em}header p{margin:.45rem 0 0;color:#dceef8;max-width:980px;line-height:1.45}
-.layout{display:grid;grid-template-columns:280px 1fr 360px;gap:18px;padding:18px;align-items:start}.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}.card h2,.card h3{margin:0;padding:14px 16px;background:var(--blue);color:white;font-size:1.05rem}.card h3{background:#244c66;font-size:.95rem}.content{padding:16px}.nav{position:sticky;top:12px}.nav button{width:100%;text-align:left;border:0;background:transparent;padding:12px 14px;border-bottom:1px solid var(--line);cursor:pointer;color:var(--ink);font-weight:650}.nav button:hover,.nav button.active{background:var(--blue3);color:#0f4565}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-label{display:block;font-size:.82rem;font-weight:750;color:#31556b;margin:0 0 5px}input,select,textarea{width:100%;border:1px solid #c8d6df;border-radius:12px;padding:10px 11px;background:#fbfdff;color:var(--ink);font:inherit}textarea{min-height:86px;resize:vertical}.hint{font-size:.78rem;color:var(--muted);line-height:1.35;margin-top:5px}.section{display:none}.section.active{display:block}.row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:end}.btn{border:0;border-radius:12px;background:var(--blue);color:white;padding:10px 13px;font-weight:800;cursor:pointer}.btn:hover{background:#174b6c}.btn.secondary{background:#e8f0f5;color:#1b465f}.btn.secondary:hover{background:#dbeaf2}.btn.danger{background:var(--red)}.btn.gold{background:var(--gold);color:#1f1a0e}.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:#eef5f9;border:1px solid var(--line);padding:5px 9px;margin:3px;font-size:.78rem}.pill strong{color:var(--blue)}.table{width:100%;border-collapse:collapse;font-size:.88rem}.table th,.table td{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}.table th{background:#eef5f9;color:#24516b;font-size:.8rem}.mini{font-size:.8rem;color:var(--muted)}.summary{position:sticky;top:12px}.score{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:12px}.score div{background:#f2f8fb;border:1px solid var(--line);border-radius:14px;padding:11px}.score b{display:block;color:var(--blue);font-size:1.25rem}.warn{background:#fff8df;border-left:5px solid var(--gold);padding:10px;border-radius:10px;margin:10px 0;color:#514017}.bad{background:#fff0f0;border-left:5px solid var(--red);padding:10px;border-radius:10px;margin:10px 0}.ok{background:#eefaf4;border-left:5px solid var(--green);padding:10px;border-radius:10px;margin:10px 0}.item-list{max-height:290px;overflow:auto;border:1px solid var(--line);border-radius:12px}.item-row{padding:9px 10px;border-bottom:1px solid var(--line);cursor:pointer}.item-row:hover{background:#eef7fc}.item-row small{display:block;color:var(--muted)}.tag{display:inline-block;background:#e4eff6;color:#184a67;border-radius:999px;padding:3px 7px;font-size:.74rem;font-weight:700;margin-right:4px}.exportBox{white-space:pre-wrap;background:#0d1f2b;color:#e9f7ff;border-radius:14px;padding:14px;min-height:260px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.82rem;line-height:1.42;overflow:auto}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}.smallbtn{font-size:.78rem;padding:7px 9px}.list{display:flex;flex-direction:column;gap:8px}.entry{border:1px solid var(--line);border-radius:14px;padding:10px;background:#fbfdff}.entry .top{display:flex;justify-content:space-between;gap:8px}.entry b{color:#153b52}.entry button{border:0;background:#f5e4e4;color:#8e2626;border-radius:9px;padding:4px 7px;cursor:pointer}.twoButtons{display:flex;gap:8px;flex-wrap:wrap}.footerNote{padding:12px 18px 22px;color:#617282;font-size:.82rem}@media(max-width:1180px){.layout{grid-template-columns:1fr}.nav,.summary{position:static}.grid,.grid3,.grid4{grid-template-columns:1fr}}
+.layout{display:grid;grid-template-columns:280px 1fr 360px;gap:18px;padding:18px;align-items:start}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.card h2,.card h3{margin:0;padding:14px 16px;background:var(--blue);color:white;font-size:1.05rem}
+.card h3{background:#244c66;font-size:.95rem}
+.content{padding:16px}
+.nav{position:sticky;top:12px}
+.nav button{width:100%;text-align:left;border:0;background:transparent;padding:12px 14px;border-bottom:1px solid var(--line);cursor:pointer;color:var(--ink);font-weight:650}
+.nav button:hover,.nav button.active{background:var(--blue3);color:#0f4565}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+label{display:block;font-size:.82rem;font-weight:750;color:#31556b;margin:0 0 5px}
+input,select,textarea{width:100%;border:1px solid #c8d6df;border-radius:12px;padding:10px 11px;background:#fbfdff;color:var(--ink);font:inherit}
+textarea{min-height:86px;resize:vertical}
+.hint{font-size:.78rem;color:var(--muted);line-height:1.35;margin-top:5px}
+.section{display:none}.section.active{display:block}
+.row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:end}
+.btn{border:0;border-radius:12px;background:var(--blue);color:white;padding:10px 13px;font-weight:800;cursor:pointer}
+.btn:hover{background:#174b6c}.btn.secondary{background:#e8f0f5;color:#1b465f}.btn.secondary:hover{background:#dbeaf2}
+.btn.danger{background:var(--red)}.btn.gold{background:var(--gold);color:#1f1a0e}
+.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:#eef5f9;border:1px solid var(--line);padding:5px 9px;margin:3px;font-size:.78rem}
+.pill strong{color:var(--blue)}
+.table{width:100%;border-collapse:collapse;font-size:.88rem}
+.table th,.table td{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+.table th{background:#eef5f9;color:#24516b;font-size:.8rem}
+.mini{font-size:.8rem;color:var(--muted)}
+.summary{position:sticky;top:12px}
+.score{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:12px}
+.score div{background:#f2f8fb;border:1px solid var(--line);border-radius:14px;padding:11px}
+.score b{display:block;color:var(--blue);font-size:1.25rem}
+.warn{background:#fff8df;border-left:5px solid var(--gold);padding:10px;border-radius:10px;margin:10px 0;color:#514017}
+.bad{background:#fff0f0;border-left:5px solid var(--red);padding:10px;border-radius:10px;margin:10px 0}
+.ok{background:#eefaf4;border-left:5px solid var(--green);padding:10px;border-radius:10px;margin:10px 0}
+.item-list{max-height:290px;overflow:auto;border:1px solid var(--line);border-radius:12px}
+.item-row{padding:9px 10px;border-bottom:1px solid var(--line);cursor:pointer}
+.item-row:hover{background:#eef7fc}.item-row small{display:block;color:var(--muted)}
+.tag{display:inline-block;background:#e4eff6;color:#184a67;border-radius:999px;padding:3px 7px;font-size:.74rem;font-weight:700;margin-right:4px}
+.tag.neg{background:#fce8e8;color:#6b1a1a}
+.exportBox{white-space:pre-wrap;background:#0d1f2b;color:#e9f7ff;border-radius:14px;padding:14px;min-height:260px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.82rem;line-height:1.42;overflow:auto}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.smallbtn{font-size:.78rem;padding:7px 9px}
+.list{display:flex;flex-direction:column;gap:8px}
+.entry{border:1px solid var(--line);border-radius:14px;padding:10px;background:#fbfdff}
+.entry .top{display:flex;justify-content:space-between;gap:8px}
+.entry b{color:#153b52}.entry button{border:0;background:#f5e4e4;color:#8e2626;border-radius:9px;padding:4px 7px;cursor:pointer}
+.twoButtons{display:flex;gap:8px;flex-wrap:wrap}
+.footerNote{padding:12px 18px 22px;color:#617282;font-size:.82rem}
+.nota-sistema{background:#eef5f9;border:1px solid #c4dce9;border-radius:10px;padding:10px 12px;margin-bottom:12px;font-size:.82rem;color:#1b3d52}
+@media(max-width:1180px){.layout{grid-template-columns:1fr}.nav,.summary{position:static}.grid,.grid3,.grid4{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header>
   <h1>Creador de Objetos Generales — Sistema PAPA</h1>
-  <p>Herramienta para diseñadores. Permite partir desde un objeto base del manual, añadir propiedades permanentes, técnicas contenidas, requisitos y maldiciones, calcular PF y exportar el resultado final como texto.</p>
+  <p>Herramienta para diseñadores. Construye objetos especiales paso a paso con el catálogo completo de propiedades, técnicas contenidas (tipos A–E), requisitos y maldiciones del sistema. Los PF se calculan en tiempo real.</p>
 </header>
 <main class="layout">
   <aside class="card nav">
@@ -42,7 +89,7 @@ label{display:block;font-size:.82rem;font-weight:750;color:#31556b;margin:0 0 5p
           <div><label>Categoría de búsqueda</label><select id="baseFilter"></select></div>
           <div><label>Buscar objeto</label><input id="baseSearch" placeholder="Ej: espada, cuero, kit, ropa..." /></div>
         </div>
-        <p class="hint">Al elegir un objeto existente se copian automáticamente sus atributos: daño, tipo, defensa, propiedades, coste, capacidad o uso. También puedes dejarlo en “Objeto personalizado”.</p>
+        <p class="hint">Al elegir un objeto existente se copian automáticamente sus atributos base. También puedes usar "Objeto personalizado".</p>
         <div class="item-list" id="baseList"></div>
         <h3>Ficha del objeto base seleccionado</h3>
         <div class="content" style="padding-left:0;padding-right:0">
@@ -64,7 +111,7 @@ label{display:block;font-size:.82rem;font-weight:750;color:#31556b;margin:0 0 5p
           <div><label>Precio final sugerido</label><input id="price" placeholder="Ej: 800 L, Sin precio, 2000 L..." /></div>
           <div><label>Disponibilidad</label><input id="availability" placeholder="Ej: 1 por ciudad grande" /></div>
         </div>
-        <div style="margin-top:12px"><label>Concepto</label><textarea id="concept" placeholder="Qué es el objeto y por qué existe."></textarea></div>
+        <div style="margin-top:12px"><label>Concepto</label><textarea id="concept" placeholder="Qué es el objeto, por qué existe, a quién sirve."></textarea></div>
         <div class="grid" style="margin-top:12px">
           <div><label>Historia</label><textarea id="history" placeholder="Origen, creador, leyenda, uso histórico..."></textarea></div>
           <div><label>Apariencia</label><textarea id="appearance" placeholder="Materiales, forma, símbolos, deterioro, detalles visuales..."></textarea></div>
@@ -76,12 +123,16 @@ label{display:block;font-size:.82rem;font-weight:750;color:#31556b;margin:0 0 5p
     <div id="props" class="section">
       <h2>3. Propiedades permanentes</h2>
       <div class="content">
-        <div class="grid3">
-          <div><label>Catálogo</label><select id="propCatalog"></select></div>
-          <div><label>Propiedad</label><select id="propSelect"></select></div>
-          <div><label>PF</label><input id="propCost" type="number" min="0" step="1" /></div>
+        <div class="nota-sistema">
+          <strong>Límites por rareza:</strong> Atributo/Ataque/Daño/Defensa: +1 en Poco Común–Raro · +2 en Muy Raro · +3 en Legendario+. Las propiedades pasivas permanentes siempre cuentan su coste completo.
         </div>
-        <div style="margin-top:12px"><label>Detalle o condición</label><input id="propDetail" placeholder="Ej: +1 Cuerpo, solo contra no-muertos, mientras portas escudo..." /></div>
+        <div class="grid3">
+          <div><label>Categoría</label><select id="propCatalog"></select></div>
+          <div><label>Propiedad</label><select id="propSelect"></select></div>
+          <div><label>PF</label><input id="propCost" type="number" min="-10" step="1" /></div>
+        </div>
+        <div style="margin-top:10px"><label>Detalle o condición</label><input id="propDetail" placeholder="Ej: +1 Cuerpo solo al levantar cargas; solo contra no-muertos; mientras portas escudo..." /></div>
+        <div id="propNote" class="hint" style="margin-top:5px"></div>
         <div style="margin-top:12px"><button class="btn" id="addProp">Añadir propiedad</button></div>
         <h3>Propiedades añadidas</h3><div class="content"><div id="propList" class="list"></div></div>
       </div>
@@ -90,18 +141,40 @@ label{display:block;font-size:.82rem;font-weight:750;color:#31556b;margin:0 0 5p
     <div id="techs" class="section">
       <h2>4. Técnicas contenidas</h2>
       <div class="content">
-        <div class="grid4">
-          <div><label>Nombre de técnica</label><input id="techName" placeholder="Ej: Corte del Amanecer" /></div>
-          <div><label>Nivel</label><select id="techLevel"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></div>
-          <div><label>Tipo</label><select id="techType"><option value="A">Tipo A — coste personal</option><option value="B">Tipo B — cargas</option><option value="C">Tipo C — sin coste</option></select></div>
-          <div><label>Usos / cargas</label><select id="techUses"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="5">5</option><option value="7">7</option></select></div>
+        <div class="nota-sistema">
+          <strong>Recordatorio:</strong> Una técnica contenida no se considera aprendida — no abre árboles de Senda, no reduce PX ni cambia Fuerzas. Los PF se calculan con las tablas exactas del PDF.
         </div>
+        <div class="grid3">
+          <div><label>Nombre de técnica</label><input id="techName" placeholder="Ej: Corte del Amanecer" /></div>
+          <div><label>Nivel</label><select id="techLevel">
+            <option value="0">Nivel 0</option>
+            <option value="1">Nivel 1</option>
+            <option value="2">Nivel 2</option>
+            <option value="3">Nivel 3</option>
+          </select></div>
+          <div><label>Tipo</label><select id="techType">
+            <option value="A">Tipo A — portador paga Resistencia</option>
+            <option value="B">Tipo B — cargas propias del objeto</option>
+            <option value="C">Tipo C — uso libre limitado (sin coste)</option>
+            <option value="D">Tipo D — uso único (se rompe o pierde función)</option>
+            <option value="E">Tipo E — técnica canalizada con mantenimiento</option>
+          </select></div>
+        </div>
+        <div id="techUsesDiv" style="margin-top:12px">
+          <label id="techUsesLabel">Usos por descanso largo</label>
+          <select id="techUses">
+            <option value="1">1 uso</option>
+            <option value="2">2 usos</option>
+            <option value="3" selected>3 usos</option>
+          </select>
+        </div>
+        <div id="techTypeHint" class="hint" style="margin-top:6px"></div>
         <div class="grid3" style="margin-top:12px">
-          <div><label>Coste de Resistencia</label><input id="techRes" placeholder="Auto para Tipo A" /></div>
+          <div id="techResDiv"><label>Coste de Resistencia (Tipo A)</label><input id="techRes" placeholder="Se calcula automáticamente" /></div>
           <div><label>Activación</label><input id="techAct" placeholder="Acción Principal, Reacción..." /></div>
           <div><label>PF calculados</label><input id="techCost" type="number" min="0" step="1" /></div>
         </div>
-        <div style="margin-top:12px"><label>Efecto</label><textarea id="techEffect" placeholder="Qué hace la técnica contenida."></textarea></div>
+        <div style="margin-top:12px"><label>Efecto de la técnica</label><textarea id="techEffect" placeholder="Qué hace la técnica contenida. Para Tipo E, describe el mecanismo de mantenimiento."></textarea></div>
         <div style="margin-top:12px"><button class="btn" id="addTech">Añadir técnica</button></div>
         <h3>Técnicas añadidas</h3><div class="content"><div id="techList" class="list"></div></div>
       </div>
@@ -110,11 +183,15 @@ label{display:block;font-size:.82rem;font-weight:750;color:#31556b;margin:0 0 5p
     <div id="reqs" class="section">
       <h2>5. Requisitos</h2>
       <div class="content">
+        <div class="nota-sistema">
+          Los requisitos reducen los PF efectivos. Regla: los requisitos no pueden reducir los PF efectivos por debajo de la mitad del PF de Poder (redondeado hacia arriba). Los requisitos triviales o fáciles de cumplir no cuentan.
+        </div>
         <div class="grid3">
           <div><label>Requisito</label><select id="reqSelect"></select></div>
           <div><label>Reducción PF</label><input id="reqCost" type="number" min="0" step="1" /></div>
-          <div><label>Detalle</label><input id="reqDetail" placeholder="Ej: Cuerpo +3, Herencia Dras..." /></div>
+          <div><label>Detalle</label><input id="reqDetail" placeholder="Ej: Cuerpo +3, Herencia Dras, Orden del Umbral..." /></div>
         </div>
+        <div id="reqNote" class="hint" style="margin-top:5px"></div>
         <div style="margin-top:12px"><button class="btn" id="addReq">Añadir requisito</button></div>
         <h3>Requisitos añadidos</h3><div class="content"><div id="reqList" class="list"></div></div>
       </div>
@@ -123,12 +200,19 @@ label{display:block;font-size:.82rem;font-weight:750;color:#31556b;margin:0 0 5p
     <div id="curses" class="section">
       <h2>6. Maldiciones y cargas narrativas</h2>
       <div class="content">
-        <div class="grid3">
-          <div><label>Gravedad</label><select id="curseLevel"><option value="2">Menor (+2 PF de margen)</option><option value="4">Mayor (+4 PF de margen)</option><option value="6">Severa (+6 PF de margen)</option><option value="8">Legendaria (+8 PF de margen)</option><option value="10">Legendaria alta (+10 PF de margen)</option></select></div>
-          <div><label>Nombre</label><input id="curseName" placeholder="Ej: El sol revela al portador" /></div>
-          <div><label>Margen PF</label><input id="curseCost" type="number" min="0" step="1" /></div>
+        <div class="nota-sistema">
+          Las maldiciones <strong>no reducen PF efectivos</strong>: amplían el límite de PF de Poder permitido por la rareza. Solo cuentan si sus consecuencias afectan el uso real del objeto con frecuencia y claridad.
         </div>
-        <div style="margin-top:12px"><label>Efecto de la maldición</label><textarea id="curseEffect" placeholder="Condición de activación, consecuencia y cierre."></textarea></div>
+        <div class="grid" style="align-items:end;margin-bottom:12px">
+          <div><label>Plantilla de maldición (opcional)</label><select id="curseTemplate"></select></div>
+          <div><button class="btn secondary" id="applyCurseTemplate" style="width:auto">Usar plantilla</button></div>
+        </div>
+        <div class="grid3">
+          <div><label>Gravedad</label><select id="curseLevel"></select></div>
+          <div><label>Nombre</label><input id="curseName" placeholder="Ej: El sol revela al portador" /></div>
+          <div><label>Margen PF otorgado</label><input id="curseCost" type="number" min="1" step="1" /></div>
+        </div>
+        <div style="margin-top:12px"><label>Efecto</label><textarea id="curseEffect" placeholder="Condición de activación, consecuencia y cómo se cierra o alivia."></textarea></div>
         <div style="margin-top:12px"><button class="btn" id="addCurse">Añadir maldición</button></div>
         <h3>Maldiciones añadidas</h3><div class="content"><div id="curseList" class="list"></div></div>
       </div>
@@ -137,7 +221,12 @@ label{display:block;font-size:.82rem;font-weight:750;color:#31556b;margin:0 0 5p
     <div id="export" class="section">
       <h2>7. Exportar resultado final</h2>
       <div class="content">
-        <div class="toolbar"><button class="btn" id="refreshExport">Actualizar texto</button><button class="btn secondary" id="copyExport">Copiar texto</button><button class="btn gold" id="downloadTxt">Descargar .txt</button><button class="btn danger" id="resetAll">Reiniciar</button></div>
+        <div class="toolbar">
+          <button class="btn" id="refreshExport">Actualizar texto</button>
+          <button class="btn secondary" id="copyExport">Copiar texto</button>
+          <button class="btn gold" id="downloadTxt">Descargar .txt</button>
+          <button class="btn danger" id="resetAll">Reiniciar</button>
+        </div>
         <div id="exportText" class="exportBox"></div>
       </div>
     </div>
@@ -148,9 +237,9 @@ label{display:block;font-size:.82rem;font-weight:750;color:#31556b;margin:0 0 5p
     <div class="content">
       <div class="score">
         <div><span class="mini">PF de Poder</span><b id="sumPower">0</b></div>
-        <div><span class="mini">Reducción</span><b id="sumReq">0</b></div>
+        <div><span class="mini">Reducción (req.)</span><b id="sumReq">−0</b></div>
         <div><span class="mini">PF efectivos</span><b id="sumEff">0</b></div>
-        <div><span class="mini">Margen maldición</span><b id="sumCurse">0</b></div>
+        <div><span class="mini">Margen extra (maldición)</span><b id="sumCurse">+0</b></div>
       </div>
       <div id="rarityBox" class="warn">Sin propiedades todavía.</div>
       <h3>Objeto actual</h3>
@@ -160,25 +249,25 @@ label{display:block;font-size:.82rem;font-weight:750;color:#31556b;margin:0 0 5p
     </div>
   </aside>
 </main>
-<div class="footerNote">Sistema PAPA · App local en HTML. Todos los cálculos pueden ajustarse manualmente por criterio del Diseñador.</div>
+<div class="footerNote">Sistema PAPA · Herramienta local en HTML. Todos los cálculos pueden ajustarse manualmente por criterio del Diseñador.</div>
+
 <script>
 const rareties=[
-  {name:'Poco Común',min:3,max:5,price:'200–500 L',availability:'1 por ciudad mediana'},
-  {name:'Raro',min:6,max:10,price:'500–2.000 L',availability:'1 por ciudad grande'},
-  {name:'Muy Raro',min:11,max:15,price:'2.000–10.000 L',availability:'1 por reino'},
-  {name:'Legendario',min:16,max:25,price:'Sin precio',availability:'Único en el mundo'},
-  {name:'Artefacto',min:26,max:999,price:'No se puede comprar',availability:'Único, cosmológico'}
+  {name:'Poco Común',min:3,max:5,maxPower:5,maxPowerCursed:7,price:'200–500 L',availability:'1 por ciudad mediana'},
+  {name:'Raro',min:6,max:10,maxPower:10,maxPowerCursed:13,price:'500–2.000 L',availability:'1 por ciudad grande'},
+  {name:'Muy Raro',min:11,max:15,maxPower:15,maxPowerCursed:19,price:'2.000–10.000 L',availability:'1 por región o reino'},
+  {name:'Legendario',min:16,max:25,maxPower:25,maxPowerCursed:32,price:'Sin precio fijo',availability:'Único en el mundo'},
+  {name:'Artefacto',min:26,max:999,maxPower:99999,maxPowerCursed:99999,price:'No se puede comprar',availability:'Único, cosmológico'}
 ];
+
 const baseItems=[
 {cat:'Personalizado',name:'Objeto personalizado',type:'',cost:'',props:'',use:'Crear desde cero'},
-// Armas simples cuerpo a cuerpo
 {cat:'Arma simple cuerpo a cuerpo',name:'Arma Improvisada',type:'Arma',damage:'1d6−3',damageType:'Variable',props:'—',cost:'0 L'},
 {cat:'Arma simple cuerpo a cuerpo',name:'Daga / Cuchillo',type:'Arma',damage:'1d6−2',damageType:'Penetrante',props:'Ligera, Arrojadiza (5/10)',cost:'4 L'},
 {cat:'Arma simple cuerpo a cuerpo',name:'Bastón',type:'Arma',damage:'1d6−1',damageType:'Contundente',props:'A dos manos',cost:'1 L'},
 {cat:'Arma simple cuerpo a cuerpo',name:'Maza Ligera',type:'Arma',damage:'1d6',damageType:'Contundente',props:'Ligera',cost:'20 L'},
 {cat:'Arma simple cuerpo a cuerpo',name:'Hoz',type:'Arma',damage:'1d6−1',damageType:'Cortante',props:'Ligera',cost:'5 L'},
 {cat:'Arma simple cuerpo a cuerpo',name:'Lanza Corta',type:'Arma',damage:'1d6',damageType:'Penetrante',props:'Arrojadiza (10/20)',cost:'10 L'},
-// Armas de puño
 {cat:'Arma de puño',name:'Puño Desnudo',type:'Arma',damage:'1d6−4',damageType:'Contundente',props:'Ligera',cost:'0 L'},
 {cat:'Arma de puño',name:'Manopla de Hierro',type:'Arma',damage:'1d6−2',damageType:'Contundente',props:'Ligera, Integrada',cost:'8 L'},
 {cat:'Arma de puño',name:'Katar (Puñal de Empuje)',type:'Arma',damage:'1d6−1',damageType:'Penetrante',props:'Ligera, Integrada, Perforante',cost:'20 L'},
@@ -188,7 +277,6 @@ const baseItems=[
 {cat:'Arma de puño',name:'Guantelete con Garras',type:'Arma',damage:'1d6',damageType:'Cortante',props:'Integrada',cost:'35 L'},
 {cat:'Arma de puño',name:'Puño de Hierro Pesado',type:'Arma',damage:'1d6+1',damageType:'Contundente',props:'Pesada, Integrada',cost:'50 L'},
 {cat:'Arma de puño',name:'Katar Doble',type:'Arma',damage:'1d6',damageType:'Penetrante',props:'Integrada, Doble Hoja',cost:'40 L'},
-// Armas marciales cuerpo a cuerpo
 {cat:'Arma marcial cuerpo a cuerpo',name:'Espada Corta',type:'Arma',damage:'1d6',damageType:'Cortante',props:'Ligera',cost:'20 L'},
 {cat:'Arma marcial cuerpo a cuerpo',name:'Hacha de Mano',type:'Arma',damage:'1d6',damageType:'Cortante',props:'Ligera, Arrojadiza (5/10)',cost:'20 L'},
 {cat:'Arma marcial cuerpo a cuerpo',name:'Estoque',type:'Arma',damage:'1d6',damageType:'Penetrante',props:'Ligera',cost:'25 L'},
@@ -202,7 +290,6 @@ const baseItems=[
 {cat:'Arma marcial cuerpo a cuerpo',name:'Mandoble / Espadón',type:'Arma',damage:'2d6',damageType:'Cortante',props:'Pesada, A dos manos',cost:'55 L'},
 {cat:'Arma marcial cuerpo a cuerpo',name:'Gran Hacha',type:'Arma',damage:'2d6+1',damageType:'Cortante',props:'Pesada, A dos manos',cost:'60 L'},
 {cat:'Arma marcial cuerpo a cuerpo',name:'Martillo a Dos Manos',type:'Arma',damage:'2d6+1',damageType:'Contundente',props:'Pesada, A dos manos',cost:'60 L'},
-// Distancia
 {cat:'Arma simple a distancia',name:'Honda',type:'Arma',damage:'1d6−2',damageType:'Contundente',props:'Rango (15/30)',cost:'1 L'},
 {cat:'Arma simple a distancia',name:'Arco Corto',type:'Arma',damage:'1d6',damageType:'Penetrante',props:'A dos manos, Rango (20/40)',cost:'50 L'},
 {cat:'Arma simple a distancia',name:'Ballesta Ligera',type:'Arma',damage:'1d6+1',damageType:'Penetrante',props:'A dos manos, Rango (25/50), Recarga (Rápida)',cost:'70 L'},
@@ -213,7 +300,6 @@ const baseItems=[
 {cat:'Arma marcial a distancia',name:'Arco Recurvo',type:'Arma',damage:'1d6+1',damageType:'Penetrante',props:'A dos manos, Rango (30/60)',cost:'90 L'},
 {cat:'Arma marcial a distancia',name:'Jabalina Pesada',type:'Arma',damage:'1d6+1',damageType:'Penetrante',props:'Arrojadiza (20/40)',cost:'25 L'},
 {cat:'Arma marcial a distancia',name:'Chakram de Guerra',type:'Arma',damage:'1d6',damageType:'Cortante',props:'Arrojadiza (15/30), Ligera, Retorno',cost:'30 L'},
-// Armaduras
 {cat:'Armadura',name:'Ropas Acolchadas',type:'Armadura',defense:'+2',dexLimit:'—',bodyReq:'+0',stealth:'—',cost:'10 L'},
 {cat:'Armadura',name:'Armadura de Cuero',type:'Armadura',defense:'+3',dexLimit:'—',bodyReq:'+0',stealth:'—',cost:'20 L'},
 {cat:'Armadura',name:'Gambesón Reforzado',type:'Armadura',defense:'+3',dexLimit:'—',bodyReq:'+0',stealth:'−1',cost:'35 L'},
@@ -223,14 +309,12 @@ const baseItems=[
 {cat:'Armadura',name:'Armadura de Escamas',type:'Armadura',defense:'+5',dexLimit:'+2',bodyReq:'+2',stealth:'−2',cost:'200 L'},
 {cat:'Armadura',name:'Armadura de Placas',type:'Armadura',defense:'+6',dexLimit:'+1',bodyReq:'+3',stealth:'−3',cost:'800 L'},
 {cat:'Armadura',name:'Armadura Completa',type:'Armadura',defense:'+7',dexLimit:'+0',bodyReq:'+4',stealth:'−4',cost:'3000 L'},
-// Escudos
 {cat:'Escudo',name:'Broquel',type:'Escudo',defense:'+1',bodyReq:'+0',stealth:'Sin penalización',cost:'10 L'},
 {cat:'Escudo',name:'Rodela Pequeña',type:'Escudo',defense:'+2',bodyReq:'+1',stealth:'−1',cost:'20 L'},
 {cat:'Escudo',name:'Escudo Redondo',type:'Escudo',defense:'+2',bodyReq:'+2',stealth:'−1',cost:'30 L'},
 {cat:'Escudo',name:'Escudo Estándar',type:'Escudo',defense:'+3',bodyReq:'+3',stealth:'−2',cost:'60 L'},
 {cat:'Escudo',name:'Escudo Grande (Pavés)',type:'Escudo',defense:'+3',bodyReq:'+4',stealth:'−3',cost:'80 L'},
 {cat:'Escudo',name:'Escudo de Torre',type:'Escudo',defense:'+4',bodyReq:'+4',stealth:'−3',cost:'120 L'},
-// Equipo aventura
 {cat:'Equipo de aventura',name:'Aceite para lámpara (frasco)',type:'Equipo',cost:'1 L',use:'Combustible para lámparas'},
 {cat:'Equipo de aventura',name:'Antorcha',type:'Equipo',cost:'2 c',use:'Iluminación simple'},
 {cat:'Equipo de aventura',name:'Cuerda cáñamo (15 m)',type:'Equipo',cost:'2 L',use:'Escalada, ataduras, arrastre'},
@@ -247,7 +331,6 @@ const baseItems=[
 {cat:'Equipo de aventura',name:'Saco de dormir',type:'Equipo',cost:'2 L',use:'Descanso en viaje'},
 {cat:'Equipo de aventura',name:'Tienda (2 personas)',type:'Equipo',cost:'20 L',use:'Refugio de campamento'},
 {cat:'Equipo de aventura',name:'Yesquero',type:'Equipo',cost:'1 L',use:'Encender fuego'},
-// Kits
 {cat:'Kit',name:'Kit de Aventurero',type:'Kit',cost:'25 L',capacity:'2',use:'Equipo básico de viaje, acampada y exploración general'},
 {cat:'Kit',name:'Kit de Explorador',type:'Kit',cost:'35 L',capacity:'2',use:'Orientación, rastreo, marcha por terreno difícil y supervivencia'},
 {cat:'Kit',name:'Kit de Escalada',type:'Kit',cost:'30 L',capacity:'2',use:'Ascenso, descenso, anclajes y seguridad en altura'},
@@ -259,100 +342,535 @@ const baseItems=[
 {cat:'Kit',name:'Kit de Cartógrafo',type:'Kit',cost:'60 L',capacity:'1',use:'Mapas, medición y registro de rutas'},
 {cat:'Kit',name:'Kit de Disfraz',type:'Kit',cost:'75 L',capacity:'1',use:'Alterar apariencia general'},
 {cat:'Kit',name:'Kit de Campamento',type:'Kit',cost:'60 L',capacity:'3',use:'Dormir, cocinar y montar refugio para grupo pequeño'},
-// Ropa y accesorios
-{cat:'Ropa',name:'Harapos',type:'Ropa',cost:'0–2 L',capacity:'0',use:'Ropa rota o improvisada'},
-{cat:'Ropa',name:'Ropa Simple',type:'Ropa',cost:'5 L',capacity:'0',use:'Prendas básicas de uso diario'},
-{cat:'Ropa',name:'Ropa de Trabajo',type:'Ropa',cost:'10 L',capacity:'0',use:'Prendas resistentes para labores físicas'},
-{cat:'Ropa',name:'Ropa de Viaje',type:'Ropa',cost:'15 L',capacity:'0',use:'Viaje, polvo, viento o lluvia leve'},
-{cat:'Ropa',name:'Ropa de Frío',type:'Ropa',cost:'25 L',capacity:'1',use:'Clima frío'},
-{cat:'Ropa',name:'Ropa Urbana',type:'Ropa',cost:'20 L',capacity:'0',use:'Vestimenta decente de ciudad'},
-{cat:'Ropa',name:'Ropa Buena',type:'Ropa',cost:'50 L',capacity:'0',use:'Presentación respetable'},
-{cat:'Ropa',name:'Ropa de Corte',type:'Ropa',cost:'120 L',capacity:'0',use:'Audiencias y actos nobles'},
-{cat:'Ropa',name:'Ropa de Gala',type:'Ropa',cost:'250 L',capacity:'0',use:'Bailes, bodas nobles, ceremonias importantes'},
-{cat:'Ropa',name:'Ropa de Disfraz',type:'Ropa',cost:'60 L',capacity:'0.5',use:'Aparentar una identidad general'},
-{cat:'Accesorio',name:'Cinturón Simple',type:'Accesorio',cost:'2 L',capacity:'0',use:'Llevar bolsas o herramientas pequeñas'},
-{cat:'Accesorio',name:'Bolsa de Cinturón',type:'Accesorio',cost:'5 L',capacity:'0',use:'Guardar monedas, llaves o efectos personales'},
-{cat:'Accesorio',name:'Botas Resistentes',type:'Accesorio',cost:'20 L',capacity:'0',use:'Viaje, barro y marcha prolongada'},
-{cat:'Accesorio',name:'Capa Buena',type:'Accesorio',cost:'40 L',capacity:'0.5',use:'Presentarse con dignidad'},
-{cat:'Accesorio',name:'Máscara Decorada',type:'Accesorio',cost:'60 L',capacity:'0',use:'Ceremonia, prestigio o identidad'},
-{cat:'Accesorio',name:'Joyería Fina',type:'Accesorio',cost:'150 L',capacity:'0',use:'Prestigio y reserva de valor'},
-{cat:'Accesorio',name:'Sello Personal',type:'Accesorio',cost:'80 L',capacity:'0',use:'Lacre, cartas o documentos'},
-{cat:'Accesorio',name:'Perfume Fino',type:'Accesorio',cost:'100 L',capacity:'0',use:'Corte, seducción o alta sociedad'},
-{cat:'Accesorio',name:'Bastón Decorativo',type:'Accesorio',cost:'20 L',capacity:'0.5',use:'Presencia, edad, autoridad o moda'}
+{cat:'Ropa',name:'Harapos',type:'Ropa',cost:'0–2 L',use:'Ropa rota o improvisada'},
+{cat:'Ropa',name:'Ropa Simple',type:'Ropa',cost:'5 L',use:'Prendas básicas de uso diario'},
+{cat:'Ropa',name:'Ropa de Trabajo',type:'Ropa',cost:'10 L',use:'Prendas resistentes para labores físicas'},
+{cat:'Ropa',name:'Ropa de Viaje',type:'Ropa',cost:'15 L',use:'Viaje, polvo, viento o lluvia leve'},
+{cat:'Ropa',name:'Ropa de Frío',type:'Ropa',cost:'25 L',use:'Clima frío'},
+{cat:'Ropa',name:'Ropa Urbana',type:'Ropa',cost:'20 L',use:'Vestimenta decente de ciudad'},
+{cat:'Ropa',name:'Ropa Buena',type:'Ropa',cost:'50 L',use:'Presentación respetable'},
+{cat:'Ropa',name:'Ropa de Corte',type:'Ropa',cost:'120 L',use:'Audiencias y actos nobles'},
+{cat:'Ropa',name:'Ropa de Gala',type:'Ropa',cost:'250 L',use:'Bailes, bodas nobles, ceremonias importantes'},
+{cat:'Ropa',name:'Ropa de Disfraz',type:'Ropa',cost:'60 L',use:'Aparentar una identidad general'},
+{cat:'Accesorio',name:'Cinturón Simple',type:'Accesorio',cost:'2 L',use:'Llevar bolsas o herramientas pequeñas'},
+{cat:'Accesorio',name:'Bolsa de Cinturón',type:'Accesorio',cost:'5 L',use:'Guardar monedas, llaves o efectos personales'},
+{cat:'Accesorio',name:'Botas Resistentes',type:'Accesorio',cost:'20 L',use:'Viaje, barro y marcha prolongada'},
+{cat:'Accesorio',name:'Capa Buena',type:'Accesorio',cost:'40 L',use:'Presentarse con dignidad'},
+{cat:'Accesorio',name:'Máscara Decorada',type:'Accesorio',cost:'60 L',use:'Ceremonia, prestigio o identidad'},
+{cat:'Accesorio',name:'Joyería Fina',type:'Accesorio',cost:'150 L',use:'Prestigio y reserva de valor'},
+{cat:'Accesorio',name:'Sello Personal',type:'Accesorio',cost:'80 L',use:'Lacre, cartas o documentos'},
+{cat:'Accesorio',name:'Perfume Fino',type:'Accesorio',cost:'100 L',use:'Corte, seducción o alta sociedad'},
+{cat:'Accesorio',name:'Bastón Decorativo',type:'Accesorio',cost:'20 L',use:'Presencia, edad, autoridad o moda'}
 ];
+
+// ─── CATÁLOGO DE PROPIEDADES (completo, valores del PDF) ───────────────────
 const propCatalog=[
-{cat:'Bonos a Atributos',name:'+1 a Cuerpo',pf:3,note:'Máximo +3 en un mismo objeto.'},{cat:'Bonos a Atributos',name:'+1 a Destreza',pf:3,note:'Máximo +3 en un mismo objeto.'},{cat:'Bonos a Atributos',name:'+1 a Aura',pf:3,note:'Máximo +3 en un mismo objeto.'},{cat:'Bonos a Atributos',name:'+1 a dos Atributos',pf:5,note:'Solo Muy Raro o superior.'},{cat:'Bonos a Atributos',name:'+1 a los tres Atributos',pf:8,note:'Solo Legendario o superior.'},
-{cat:'Combate',name:'+1 a tiradas de ataque',pf:2,note:'Solo armas.'},{cat:'Combate',name:'+1 al daño',pf:2,note:'Solo armas.'},{cat:'Combate',name:'+1 a Defensa',pf:2,note:'Armaduras, escudos o accesorios.'},{cat:'Combate',name:'+1 a Iniciativa',pf:2,note:'Accesorios o armas ligeras.'},{cat:'Combate',name:'Ignorar 1 Armadura',pf:2,note:'Ataques con el objeto ignoran 1 punto de bono de Armadura.'},{cat:'Combate',name:'Parada reactiva',pf:3,note:'Reacción defensiva limitada.'},
-{cat:'Recursos',name:'+5 Resistencia máxima',pf:1,note:'Acumulable hasta +15.'},{cat:'Recursos',name:'+3 metros de movimiento',pf:1,note:'Acumulable hasta +9.'},{cat:'Recursos',name:'+1 Potenciación de Naturaleza',pf:2,note:'Elegir Naturaleza.'},{cat:'Recursos',name:'+1 Potenciación de Concepto',pf:2,note:'Elegir Concepto.'},
-{cat:'Utilidad',name:'Ventaja en tirada específica',pf:3,note:'Debe ser estrecha.'},{cat:'Utilidad',name:'+1 a tirada específica',pf:1,note:'Situacional y acotada.'},{cat:'Utilidad',name:'Herramienta maestra',pf:3,note:'Ventaja en uso profesional concreto.'},{cat:'Utilidad',name:'Trabajo sin taller completo',pf:5,note:'Permite trabajar con medios limitados.'},{cat:'Utilidad',name:'Ocultamiento del objeto',pf:2,note:'Ventaja para ocultarlo en registros superficiales.'},{cat:'Utilidad',name:'Luz clara 10 m a voluntad',pf:2,note:'Iluminación útil pero no ofensiva.'},
-{cat:'Exploración',name:'Respirar bajo el agua',pf:3,note:'Mientras se porte el objeto.'},{cat:'Exploración',name:'Ver en oscuridad 10 m',pf:2,note:'No revela colores ni detalles finos si no aplica.'},{cat:'Exploración',name:'Ignorar terreno difícil específico',pf:2,note:'Elegir tipo de terreno.'},{cat:'Exploración',name:'No sufrir caídas hasta 10 m',pf:2,note:'Protección situacional.'},{cat:'Exploración',name:'Resistir daño ambiental',pf:2,note:'Frío, calor, humo, presión leve, etc.'},
-{cat:'Especial',name:'Propiedad personalizada menor',pf:1,note:'Útil pero situacional.'},{cat:'Especial',name:'Propiedad personalizada media',pf:2,note:'Relevante y frecuente.'},{cat:'Especial',name:'Propiedad personalizada mayor',pf:3,note:'Fuerte o definitoria.'},{cat:'Especial',name:'Propiedad personalizada extraordinaria',pf:5,note:'Requiere límites claros.'}
+// Bonos a Atributos
+{cat:'Bonos a Atributos',name:'+1 a un Atributo (Cuerpo, Destreza o Aura)',pf:4,note:'Elegir Atributo al crear. Límite: +1 en Poco Común/Raro · +2 en Muy Raro · +3 en Legendario+.'},
+{cat:'Bonos a Atributos',name:'+1 a un Atributo bajo condición concreta',pf:2,note:'La condición debe ser frecuente pero limitada. Ej: Cuerpo al levantar; Destreza al trepar; Aura al resistir miedo.'},
+{cat:'Bonos a Atributos',name:'+1 a dos Atributos distintos',pf:7,note:'Solo Muy Raro o superior.'},
+{cat:'Bonos a Atributos',name:'+1 a los tres Atributos',pf:12,note:'Solo Legendario o superior.'},
+{cat:'Bonos a Atributos',name:'+2 a un Atributo específico',pf:10,note:'Solo Muy Raro o superior. Cuenta como bono mayor.'},
+{cat:'Bonos a Atributos',name:'+3 a un Atributo específico',pf:18,note:'Solo Legendario o superior. Requiere requisito o maldición fuerte.'},
+// Combate
+{cat:'Combate',name:'+1 a tiradas de ataque',pf:3,note:'Solo armas o focos ofensivos.'},
+{cat:'Combate',name:'+1 al daño',pf:3,note:'Solo armas o focos ofensivos.'},
+{cat:'Combate',name:'+1 a tiradas de ataque bajo condición',pf:2,note:'Requiere condición concreta. Ej: objetivo flanqueado, primer turno de combate.'},
+{cat:'Combate',name:'+1 al daño bajo condición',pf:2,note:'Requiere condición concreta.'},
+{cat:'Combate',name:'+1 a Defensa',pf:3,note:'Armaduras, escudos o accesorios defensivos.'},
+{cat:'Combate',name:'+1 a Defensa bajo condición',pf:2,note:'Requiere condición clara. Ej: sin moverse, mientras porta escudo.'},
+{cat:'Combate',name:'+2 a Iniciativa',pf:2,note:'Accesorios, armas ligeras o calzado especial.'},
+{cat:'Combate',name:'+2 a Iniciativa bajo condición',pf:1,note:'Requiere condición clara.'},
+// Resistencia y movimiento
+{cat:'Resistencia y movimiento',name:'+3 Resistencia máxima',pf:2,note:'Adecuado para Poco Común.'},
+{cat:'Resistencia y movimiento',name:'+5 Resistencia máxima',pf:3,note:'Límite normal en Raro o inferior.'},
+{cat:'Resistencia y movimiento',name:'+10 Resistencia máxima',pf:7,note:'Solo Muy Raro o superior.'},
+{cat:'Resistencia y movimiento',name:'+15 Resistencia máxima',pf:12,note:'Solo Legendario o superior.'},
+{cat:'Resistencia y movimiento',name:'+3 m de movimiento terrestre',pf:2,note:'Límite: +3 m en Poco Común/Raro · +6 m en Muy Raro · +9 m en Legendario+.'},
+{cat:'Resistencia y movimiento',name:'+3 m de movimiento bajo condición',pf:1,note:'Terreno o situación específica.'},
+{cat:'Resistencia y movimiento',name:'Ignorar terreno difícil específico',pf:2,note:'Elegir tipo de terreno al crear el objeto.'},
+{cat:'Resistencia y movimiento',name:'Velocidad de trepar igual al movimiento',pf:4,note:'Requiere objeto adecuado (guantes, botas, garras...).'},
+{cat:'Resistencia y movimiento',name:'Velocidad de nado igual al movimiento',pf:3,note:'Requiere objeto adecuado.'},
+{cat:'Resistencia y movimiento',name:'Caída segura hasta 10 m',pf:2,note:'No permite volar ni planeo.'},
+{cat:'Resistencia y movimiento',name:'Planeo limitado',pf:3,note:'Requiere altura inicial. No es vuelo sostenido.'},
+{cat:'Resistencia y movimiento',name:'Vuelo sostenido',pf:10,note:'Solo Muy Raro o superior. Debe tener límite, requisito o activación.'},
+// Salvaciones, Conceptos y Naturalezas
+{cat:'Salvaciones / Conceptos / Naturalezas',name:'+1 a una Salvación específica',pf:2,note:'Elegir Cuerpo, Destreza o Aura.'},
+{cat:'Salvaciones / Conceptos / Naturalezas',name:'+2 a una Salvación específica',pf:5,note:'Solo Raro o superior.'},
+{cat:'Salvaciones / Conceptos / Naturalezas',name:'+1 a todas las Salvaciones',pf:6,note:'Solo Muy Raro o superior.'},
+{cat:'Salvaciones / Conceptos / Naturalezas',name:'Ventaja contra una fuente concreta',pf:3,note:'Elegir venenos, miedo, fuego, enfermedades, etc.'},
+{cat:'Salvaciones / Conceptos / Naturalezas',name:'Inmunidad a un efecto menor específico',pf:4,note:'Humo común, polvo, frío ambiental leve, etc.'},
+{cat:'Salvaciones / Conceptos / Naturalezas',name:'Inmunidad a un estado alterado específico',pf:8,note:'Solo Muy Raro o superior.'},
+{cat:'Salvaciones / Conceptos / Naturalezas',name:'+1 a un Concepto específico',pf:3,note:'No otorga el Concepto si el personaje no lo posee.'},
+{cat:'Salvaciones / Conceptos / Naturalezas',name:'+2 a un Concepto específico',pf:7,note:'Solo Muy Raro o superior.'},
+{cat:'Salvaciones / Conceptos / Naturalezas',name:'+1 a una Naturaleza específica',pf:3,note:'Elegir Naturaleza al crear el objeto.'},
+{cat:'Salvaciones / Conceptos / Naturalezas',name:'+2 a una Naturaleza específica',pf:7,note:'Solo Muy Raro o superior.'},
+// Ventaja en tiradas
+{cat:'Ventaja en tiradas',name:'Ventaja en una tirada muy específica',pf:2,note:'Ej: abrir cerraduras simples, detectar veneno en comida.'},
+{cat:'Ventaja en tiradas',name:'Ventaja en una familia estrecha de tiradas',pf:3,note:'Ej: rastrear en nieve, trepar piedra.'},
+{cat:'Ventaja en tiradas',name:'Ventaja en una familia amplia de tiradas',pf:5,note:'Ej: rastrear criaturas (en cualquier terreno o técnica).'},
+{cat:'Ventaja en tiradas',name:'Ventaja en una categoría completa de escenas',pf:8,note:'Solo Muy Raro o superior.'},
+// Sentidos e inmunidades
+{cat:'Sentidos e inmunidades',name:'Visión en penumbra',pf:2,note:'No permite ver en oscuridad total.'},
+{cat:'Sentidos e inmunidades',name:'Visión en oscuridad total hasta 10 m',pf:4,note:'No revela color ni detalles finos.'},
+{cat:'Sentidos e inmunidades',name:'Sentido térmico hasta 6 m',pf:5,note:'No atraviesa muros gruesos.'},
+{cat:'Sentidos e inmunidades',name:'Sentido ciego hasta 6 m',pf:6,note:'Requiere sonido, vibración, eco u otro mecanismo definido.'},
+{cat:'Sentidos e inmunidades',name:'Detectar magia, energía o corrupción cercana',pf:4,note:'Requiere Acción Principal o concentración breve.'},
+{cat:'Sentidos e inmunidades',name:'Reducir 1 daño de una fuente específica',pf:3,note:'Elegir fuego, veneno, armas cortantes, etc.'},
+{cat:'Sentidos e inmunidades',name:'Reducir 1 daño de todas las fuentes',pf:7,note:'Solo Muy Raro o superior.'},
+{cat:'Sentidos e inmunidades',name:'Resistencia a un tipo de daño específico',pf:6,note:'Solo Raro o superior.'},
+{cat:'Sentidos e inmunidades',name:'Inmunidad a un tipo de daño',pf:14,note:'Solo Legendario o superior.'},
+// Arma / Armadura / Escudo / Herramienta
+{cat:'Arma / Armadura / Escudo',name:'Integrada',pf:1,note:'No puede ser desarmada, pero ocupa esa mano.'},
+{cat:'Arma / Armadura / Escudo',name:'Perforante',pf:2,note:'Ignora 1 punto de Armadura del objetivo.'},
+{cat:'Arma / Armadura / Escudo',name:'Paradora',pf:2,note:'1 vez por ronda: Reacción para +2 Defensa contra ataque cuerpo a cuerpo.'},
+{cat:'Arma / Armadura / Escudo',name:'Doble Hoja',pf:2,note:'Si superas la Defensa del objetivo por 4 o más, +1 daño adicional.'},
+{cat:'Arma / Armadura / Escudo',name:'Ligera',pf:1,note:'Facilita maniobras rápidas o lucha cerrada.'},
+{cat:'Arma / Armadura / Escudo',name:'Pesada (reduce PF del objeto)',pf:-1,note:'Requiere Cuerpo adecuado o causa Desventaja en uso prolongado. Reduce el PF total del objeto en 1.'},
+{cat:'Arma / Armadura / Escudo',name:'Retornante',pf:3,note:'Si se lanza, vuelve al final del turno.'},
+{cat:'Arma / Armadura / Escudo',name:'Cambio de tipo de daño',pf:2,note:'El arma puede usar un tipo de daño alternativo coherente.'},
+{cat:'Arma / Armadura / Escudo',name:'+1 a Armadura',pf:3,note:'Cuenta dentro del límite de Defensa/protección de la rareza.'},
+{cat:'Arma / Armadura / Escudo',name:'Armadura silenciosa',pf:3,note:'No impone Desventaja al Sigilo por ruido.'},
+{cat:'Arma / Armadura / Escudo',name:'Escudo anclado',pf:2,note:'Ventaja para resistir Empujes.'},
+{cat:'Arma / Armadura / Escudo',name:'Herramienta precisa',pf:2,note:'+1 a una tarea concreta del oficio.'},
+{cat:'Arma / Armadura / Escudo',name:'Herramienta maestra',pf:3,note:'Ventaja en una tarea concreta del oficio.'},
+{cat:'Arma / Armadura / Escudo',name:'Trabajo sin taller',pf:5,note:'Permite realizar una tarea de oficio sin taller completo, con límites claros.'},
+// Social y almacenamiento
+{cat:'Social y almacenamiento',name:'Apariencia distinguida',pf:2,note:'+1 para causar buena impresión en contexto específico.'},
+{cat:'Social y almacenamiento',name:'Disfraz estable',pf:3,note:'Ventaja para sostener una identidad concreta.'},
+{cat:'Social y almacenamiento',name:'Insignia reconocida',pf:2,note:'Permite acceso social limitado si el símbolo tiene autoridad local.'},
+{cat:'Social y almacenamiento',name:'Aura intimidante',pf:3,note:'+1 o Ventaja para intimidar bajo condición clara.'},
+{cat:'Social y almacenamiento',name:'Presencia tranquilizadora',pf:3,note:'+1 o Ventaja para calmar o mediar.'},
+{cat:'Social y almacenamiento',name:'Compartimento oculto pequeño',pf:1,note:'Oculta un objeto diminuto.'},
+{cat:'Social y almacenamiento',name:'Compartimento oculto mediano',pf:2,note:'Oculta arma pequeña, documento o frasco.'},
+{cat:'Social y almacenamiento',name:'Espacio ampliado menor',pf:5,note:'Límite claro de peso y volumen.'},
+{cat:'Social y almacenamiento',name:'Espacio ampliado mayor',pf:10,note:'Solo Muy Raro o superior.'},
+{cat:'Social y almacenamiento',name:'Luz tenue 3 m',pf:1,note:'Activación libre.'},
+{cat:'Social y almacenamiento',name:'Luz clara 10 m',pf:2,note:'Activación libre o Acción Rápida.'},
+{cat:'Social y almacenamiento',name:'Mensaje breve pregrabado',pf:2,note:'No permite comunicación libre ni respuesta.'},
+// Especial
+{cat:'Especial (personalizada)',name:'Propiedad personalizada menor',pf:1,note:'Útil pero situacional.'},
+{cat:'Especial (personalizada)',name:'Propiedad personalizada media',pf:2,note:'Relevante y frecuente.'},
+{cat:'Especial (personalizada)',name:'Propiedad personalizada mayor',pf:3,note:'Fuerte o definitoria.'},
+{cat:'Especial (personalizada)',name:'Propiedad personalizada extraordinaria',pf:5,note:'Requiere límites claros y rareza adecuada.'}
 ];
+
+// ─── REQUISITOS (completo, valores del PDF) ────────────────────────────────
 const reqs=[
-{name:'Sintonía',pf:1,desc:'Dedicar un descanso largo a activar el objeto.'},
+{name:'Concepto amplio relacionado',pf:1,desc:'Ej: "combatiente", "explorador", "curandero".'},
+{name:'Concepto específico',pf:2,desc:'Solo un Concepto concreto activa el objeto plenamente.'},
+{name:'Concepto específico potenciado +1',pf:3,desc:'Requiere el Concepto y haberlo potenciado al menos una vez.'},
+{name:'Naturaleza coherente (actuar con)',pf:1,desc:'El portador debe actuar con una Naturaleza compatible.'},
+{name:'Naturaleza específica',pf:2,desc:'Solo funciona al actuar con esa Naturaleza concreta.'},
+{name:'Naturaleza específica potenciada +1',pf:3,desc:'Requiere la Naturaleza y haberla potenciado al menos una vez.'},
 {name:'Requiere Atributo +2 o superior',pf:1,desc:'Cuerpo, Destreza o Aura +2.'},
 {name:'Requiere Atributo +3 o superior',pf:2,desc:'Cuerpo, Destreza o Aura +3.'},
 {name:'Requiere Atributo +4 o superior',pf:3,desc:'Cuerpo, Destreza o Aura +4.'},
-{name:'Requiere Concepto concreto',pf:2,desc:'El objeto solo funciona con un Concepto específico.'},
-{name:'Requiere Naturaleza concreta',pf:1,desc:'Funciona solo al actuar con esa Naturaleza.'},
-{name:'Requiere una Herencia concreta',pf:2,desc:'Solo miembros de una Herencia pueden usarlo.'},
-{name:'Requiere no ser de una Herencia concreta',pf:2,desc:'No funciona para una Herencia definida.'},
-{name:'Requiere Senda concreta',pf:2,desc:'Solo una Senda puede usarlo plenamente.'},
-{name:'Requiere juramento o código activo',pf:2,desc:'El portador debe mantener una conducta.'},
-{name:'Requiere entorno específico',pf:2,desc:'Agua, sombra, templo, forja, bosque, etc.'},
-{name:'Requiere condición táctica',pf:1,desc:'No moverse, estar herido, portar escudo, etc.'}
+{name:'Requiere Senda concreta',pf:2,desc:'Solo una Senda específica puede usar el objeto plenamente.'},
+{name:'Requiere habilidad concreta de Senda',pf:3,desc:'Una habilidad o rasgo específico dentro de la Senda.'},
+{name:'Requiere Senda concreta y nivel avanzado',pf:4,desc:'Senda definida más haber avanzado a cierto grado.'},
+{name:'Requiere una Herencia concreta',pf:2,desc:'Solo miembros de esa Herencia pueden usarlo.'},
+{name:'Requiere NO ser de una Herencia concreta',pf:2,desc:'Debe haber razón clara (enemistad, incompatibilidad, tabú, conflicto espiritual).'},
+{name:'Organización amplia',pf:1,desc:'Ej: cualquier guerrero de un ejército, todo miembro de un gremio.'},
+{name:'Orden, casa o templo específico',pf:2,desc:'Solo miembros de ese grupo concreto.'},
+{name:'Juramento o código activo',pf:2,desc:'El portador debe mantener una conducta o voto activo.'},
+{name:'Linaje, sangre o reconocimiento ritual',pf:3,desc:'Solo accesible por herencia directa o rito verificado.'},
+{name:'Entorno común pero no constante',pf:1,desc:'Ej: ciudad, noche, interior.'},
+{name:'Entorno específico',pf:2,desc:'Agua, sombra, templo, forja, bosque, etc.'},
+{name:'Entorno raro o difícil de alcanzar',pf:3,desc:'Alta montaña, fondo marino, sanctum sellado, etc.'},
+{name:'1 minuto de preparación',pf:1,desc:'Requiere preparación breve antes de funcionar.'},
+{name:'10 minutos de preparación',pf:2,desc:'Preparación más larga antes de funcionar.'},
+{name:'1 hora de preparación',pf:3,desc:'Preparación extensa antes de funcionar.'},
+{name:'Preparación durante descanso largo',pf:4,desc:'Solo funciona tras un descanso largo completo.'},
+{name:'Sintonía simple',pf:1,desc:'Dedicar un descanso largo a activar el objeto.'},
+{name:'Sintonía con coste narrativo',pf:2,desc:'Sintonía que exige algo de la historia (sacrificio, promesa, rito).'},
+{name:'Sintonía exclusiva',pf:3,desc:'Solo una persona puede estar sintonizada; romper tiene consecuencias.'},
+{name:'Condición táctica',pf:1,desc:'No moverse, estar herido, portar escudo, flanquear al objetivo, etc.'}
 ];
+
+// ─── MALDICIONES (valores corregidos del PDF) ──────────────────────────────
+const curseLevels=[
+  {name:'Menor — +1 PF de margen',pf:1},
+  {name:'Media — +2 PF de margen',pf:2},
+  {name:'Mayor — +3 PF de margen',pf:3},
+  {name:'Legendaria baja — +4 PF de margen',pf:4},
+  {name:'Legendaria alta — +7 PF de margen',pf:7}
+];
+
+const curseCatalog=[
+  {name:'(Ninguna / escribir maldición propia)',pf:null,effect:''},
+  {name:'Marca visible (menor)',pf:1,effect:'El objeto deja una señal física o espiritual reconocible en el portador mientras está equipado.'},
+  {name:'Voz inquietante (menor)',pf:1,effect:'El objeto susurra, vibra o emite sonidos que pueden delatar al portador en momentos de silencio.'},
+  {name:'Rechazo social leve (menor)',pf:1,effect:'Ciertos grupos o individuos desconfían del portador si ven el objeto. Definir qué grupo al crear.'},
+  {name:'Hambre menor (menor)',pf:1,effect:'El objeto exige una pequeña ofrenda o gesto ritual diario para funcionar con normalidad.'},
+  {name:'Atracción menor (menor)',pf:1,effect:'Criaturas o curiosos relacionados con el objeto pueden percibirlo a corta distancia.'},
+  {name:'Penalización de Naturaleza (media)',pf:2,effect:'−1 al actuar con la Naturaleza opuesta a la del objeto mientras se porta.'},
+  {name:'Desventaja social concreta (media)',pf:2,effect:'Desventaja frente a un grupo importante que reconoce el objeto. Definir el grupo al crear.'},
+  {name:'Coste de Resistencia (media)',pf:2,effect:'Cada activación mayor causa 1d6 de daño a la Resistencia, no reducible por Armadura ni otros efectos.'},
+  {name:'Impulso compulsivo (media)',pf:2,effect:'Salvación de Aura ND 12 cada vez que el impulso del objeto se active, o el portador actúa según ese impulso hasta resolverlo.'},
+  {name:'Fatiga del vínculo (media)',pf:2,effect:'Si activas el poder mayor más de una vez entre descansos largos, ganas 1 Fatiga.'},
+  {name:'Eco espiritual (media)',pf:2,effect:'Cada uso importante del objeto atrae atención espiritual, divina o corrupta. El Diseñador decide qué tipo.'},
+  {name:'Daño inevitable (mayor)',pf:3,effect:'Cada activación principal causa 2d6 de daño directo a la Resistencia, no reducible.'},
+  {name:'Pérdida de control (mayor)',pf:3,effect:'Salvación de Aura ND 13 o el objeto toma el control del portador hasta el final del siguiente turno.'},
+  {name:'Vulnerabilidad marcada (mayor)',pf:3,effect:'Mientras el poder esté activo, el portador recibe +2 de daño de una fuente concreta. Definir la fuente al crear.'},
+  {name:'Entidad vinculada (mayor)',pf:3,effect:'Una entidad consciente vive dentro del objeto. Tiene sus propios deseos y puede comunicarlos al portador.'},
+  {name:'Corrupción progresiva (legendaria)',pf:4,effect:'Cada uso mayor deja una marca acumulativa en el portador. Definir qué cambia con cada marca.'},
+  {name:'Juramento irreversible (legendaria)',pf:4,effect:'Romper la causa del objeto tiene consecuencias graves y permanentes para el portador.'},
+  {name:'Precio de vida (legendaria alta)',pf:7,effect:'Cada uso importante sacrifica años de vida, recuerdos, vínculos, Naturalezas, Conceptos o fragmentos de alma del portador.'}
+];
+
+// ─── ESTADO ────────────────────────────────────────────────────────────────
 let state={base:null,props:[],techs:[],reqs:[],curses:[]};
 const $=id=>document.getElementById(id);
-function init(){
-  document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>showTab(b.dataset.tab));
-  rareties.forEach(r=>$('rarity').add(new Option(`${r.name} (${r.min}${r.max>100?'+':'–'+r.max} PF)`,r.name)));
-  $('rarity').onchange=()=>{const r=rareties.find(x=>x.name===$('rarity').value); if(!$('price').value)$('price').value=r.price; if(!$('availability').value)$('availability').value=r.availability; update();};
-  const cats=[...new Set(baseItems.map(i=>i.cat))]; $('baseFilter').innerHTML='<option value="Todas">Todas</option>'+cats.map(c=>`<option>${c}</option>`).join('');
-  $('baseFilter').onchange=renderBaseList;$('baseSearch').oninput=renderBaseList;$('clearBase').onclick=()=>selectBase(baseItems[0]);
-  const pcats=[...new Set(propCatalog.map(p=>p.cat))]; $('propCatalog').innerHTML=pcats.map(c=>`<option>${c}</option>`).join(''); $('propCatalog').onchange=renderPropSelect; $('propSelect').onchange=syncPropCost;
-  $('addProp').onclick=addProp;
-  $('techLevel').onchange=syncTechCost;$('techType').onchange=syncTechCost;$('techUses').onchange=syncTechCost;$('addTech').onclick=addTech;
-  $('reqSelect').innerHTML=reqs.map((r,i)=>`<option value="${i}">${r.name}</option>`).join(''); $('reqSelect').onchange=syncReqCost; $('addReq').onclick=addReq;
-  $('curseLevel').onchange=()=>{$('curseCost').value=$('curseLevel').value}; $('addCurse').onclick=addCurse;
-  ['objName','objType','price','availability','concept','history','appearance','designNotes'].forEach(id=>$(id).oninput=update);
-  $('refreshExport').onclick=()=>{$('exportText').textContent=exportText();};
-  $('copyExport').onclick=async()=>{const t=exportText();$('exportText').textContent=t;await navigator.clipboard.writeText(t);alert('Texto copiado al portapapeles.');};
-  $('downloadTxt').onclick=downloadTxt;$('resetAll').onclick=resetAll;
-  renderBaseList(); renderPropSelect(); syncTechCost(); syncReqCost(); $('curseCost').value=$('curseLevel').value; selectBase(baseItems[0]);
+
+// ─── TÉCNICAS: tablas exactas del PDF ──────────────────────────────────────
+function techPF(level,type,uses){
+  level=+level; uses=+uses;
+  // Tipo A: portador paga Resistencia [nivel][usos: 1→0, 2→1, 3→2]
+  if(type==='A'){
+    const t=[[1,2,3],[3,4,5],[6,7,8],[10,12,14]];
+    return (t[level]||t[3])[Math.min(Math.max(uses-1,0),2)]||0;
+  }
+  // Tipo B: cargas propias [nivel][cargas: 1→0, 2→1, 3→2, 5→3]
+  if(type==='B'){
+    const t=[[2,3,4,6],[4,5,6,9],[8,9,10,14],[14,16,18,24]];
+    const ci={1:0,2:1,3:2,5:3}[uses]??0;
+    return (t[level]||t[3])[ci]||0;
+  }
+  // Tipo C: uso libre limitado [nivel][usos: 1→0, 2→1, 3→2]
+  if(type==='C'){
+    const t=[[3,5,7],[6,9,12],[12,16,20],[20,26,35]];
+    return (t[level]||t[3])[Math.min(Math.max(uses-1,0),2)]||0;
+  }
+  // Tipo D: uso único (se rompe)
+  if(type==='D') return [1,2,4,7][level]||0;
+  // Tipo E: canalizada (coste base; el Diseñador ajusta por mantenimiento)
+  if(type==='E') return [2,4,8,14][level]||0;
+  return 0;
 }
-function showTab(tab){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));$(tab).classList.add('active');document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab)); if(tab==='export')$('exportText').textContent=exportText();}
-function renderBaseList(){const f=$('baseFilter').value,q=$('baseSearch').value.toLowerCase().trim();const list=baseItems.filter(i=>(f==='Todas'||i.cat===f)&&(!q||[i.name,i.cat,i.type,i.props,i.use].join(' ').toLowerCase().includes(q)));$('baseList').innerHTML=list.map((i,idx)=>`<div class="item-row" data-name="${i.name.replace(/"/g,'&quot;')}"><b>${i.name}</b><small>${i.cat} · ${i.type||'—'} ${i.cost?'· '+i.cost:''}</small></div>`).join('');document.querySelectorAll('.item-row').forEach(el=>el.onclick=()=>selectBase(baseItems.find(i=>i.name===el.dataset.name)));}
-function selectBase(item){state.base=item.name==='Objeto personalizado'?null:item; if(item.name!=='Objeto personalizado'){if(!$('objName').value)$('objName').value=item.name;if(!$('objType').value)$('objType').value=item.type||item.cat;if(!$('price').value)$('price').value=item.cost||'';} update();}
-function baseHtml(item){if(!item)return '<div class="warn">Objeto personalizado. Completa los datos manualmente.</div>';let rows=[];['cat','type','damage','damageType','props','defense','dexLimit','bodyReq','stealth','capacity','cost','use'].forEach(k=>{if(item[k])rows.push(`<tr><th>${labelMap(k)}</th><td>${item[k]}</td></tr>`)});return `<table class="table">${rows.join('')}</table>`;}
-function labelMap(k){return {cat:'Categoría',type:'Tipo',damage:'Daño',damageType:'Tipo de daño',props:'Propiedades',defense:'Bono Defensa',dexLimit:'Límite Destreza',bodyReq:'Req. Cuerpo',stealth:'Penalización Sigilo',capacity:'Capacidad',cost:'Coste base',use:'Uso'}[k]||k}
-function renderPropSelect(){const c=$('propCatalog').value;const props=propCatalog.filter(p=>p.cat===c);$('propSelect').innerHTML=props.map((p,i)=>`<option value="${propCatalog.indexOf(p)}">${p.name} (${p.pf} PF)</option>`).join('');syncPropCost();}
-function syncPropCost(){const p=propCatalog[$('propSelect').value]; if(p){$('propCost').value=p.pf;$('propDetail').placeholder=p.note||'';}}
-function addProp(){const p=propCatalog[$('propSelect').value]; if(!p)return; state.props.push({name:p.name,pf:+$('propCost').value||0,detail:$('propDetail').value,note:p.note});$('propDetail').value='';renderLists();update();}
-function techPF(level,type,uses){level=+level;uses=+uses;if(type==='A')return [1,2,4,6][level]||0;if(type==='B'){const base={0:3,1:3,2:6,3:9}[level]||3;if(uses<=3)return base;if(uses===5)return base+2;if(uses===7)return base+4;return base;}if(type==='C'){if(level===0)return 0;return level*5*uses;}return 0;}
-function syncTechCost(){const pf=techPF($('techLevel').value,$('techType').value,$('techUses').value);$('techCost').value=pf;if($('techType').value==='A')$('techRes').value=[1,2,4,6][+$('techLevel').value];}
-function addTech(){const name=$('techName').value.trim()||'Técnica contenida';state.techs.push({name,level:+$('techLevel').value,type:$('techType').value,uses:+$('techUses').value,res:$('techRes').value,act:$('techAct').value,pf:+$('techCost').value||0,effect:$('techEffect').value});$('techName').value='';$('techEffect').value='';renderLists();update();}
-function syncReqCost(){const r=reqs[$('reqSelect').value]; if(r){$('reqCost').value=r.pf;$('reqDetail').placeholder=r.desc;}}
-function addReq(){const r=reqs[$('reqSelect').value];state.reqs.push({name:r.name,pf:+$('reqCost').value||0,detail:$('reqDetail').value,desc:r.desc});$('reqDetail').value='';renderLists();update();}
-function addCurse(){state.curses.push({name:$('curseName').value.trim()||'Maldición',pf:+$('curseCost').value||0,effect:$('curseEffect').value});$('curseName').value='';$('curseEffect').value='';renderLists();update();}
+
+function syncTechCost(){
+  const level=+$('techLevel').value;
+  const type=$('techType').value;
+  const uses=+$('techUses').value;
+
+  // Mostrar/ocultar usos según tipo
+  const usesDiv=$('techUsesDiv');
+  const resDiv=$('techResDiv');
+  const hint=$('techTypeHint');
+
+  if(type==='D'){
+    usesDiv.style.display='none'; resDiv.style.display='none'; $('techRes').value='—';
+    hint.textContent='Uso único — el objeto pierde su función o se destruye tras activarse (Tipo D).';
+  } else if(type==='E'){
+    usesDiv.style.display='none'; resDiv.style.display='none'; $('techRes').value='—';
+    hint.textContent='Técnica canalizada (Tipo E). El coste mostrado es el base; ajusta manualmente el PF según los modificadores de mantenimiento del PDF (concentración, Resistencia por turno, duración fija, etc.).';
+  } else {
+    usesDiv.style.display=''; hint.textContent='';
+    // Actualizar opciones de usos según tipo
+    const curVal=$('techUses').value;
+    if(type==='B'){
+      $('techUsesLabel').textContent='Cargas del objeto';
+      $('techUses').innerHTML='<option value="1">1 carga</option><option value="2">2 cargas</option><option value="3">3 cargas</option><option value="5">5 cargas</option>';
+    } else {
+      $('techUsesLabel').textContent='Usos por descanso largo';
+      $('techUses').innerHTML='<option value="1">1 uso</option><option value="2">2 usos</option><option value="3">3 usos</option>';
+    }
+    if([...$('techUses').options].some(o=>o.value===curVal)) $('techUses').value=curVal;
+    if(type==='A'){
+      resDiv.style.display=''; $('techRes').value=[1,2,4,6][level];
+    } else {
+      resDiv.style.display='none'; $('techRes').value='—';
+    }
+  }
+  $('techCost').value=techPF(level,type,uses);
+}
+
+// ─── TOTALES ────────────────────────────────────────────────────────────────
+function totals(){
+  const prop=state.props.reduce((a,b)=>a+b.pf,0);
+  const tech=state.techs.reduce((a,b)=>a+b.pf,0);
+  const req=state.reqs.reduce((a,b)=>a+b.pf,0);
+  const curse=state.curses.reduce((a,b)=>a+b.pf,0);
+  const power=prop+tech;
+  const rawEff=power-req;
+  const minEff=power>0?Math.ceil(power/2):0;
+  const eff=Math.max(rawEff, minEff, 0);
+  const reqCapped=power>0&&rawEff<minEff;
+  return {prop,tech,power,req,eff,curse,reqCapped,minEff};
+}
+
+function recommendedRarity(pf){
+  return rareties.find(r=>pf>=r.min&&pf<=r.max)||rareties[rareties.length-1];
+}
+
+// ─── ACTUALIZAR RESUMEN ─────────────────────────────────────────────────────
+function update(){
+  const t=totals();
+  $('sumPower').textContent=t.power;
+  $('sumReq').textContent='−'+t.req;
+  $('sumEff').textContent=t.eff;
+  $('sumCurse').textContent='+'+t.curse;
+
+  const rr=recommendedRarity(t.eff);
+  const desired=rareties.find(r=>r.name===$('rarity').value)||rr;
+  let cls='ok', msgs=[];
+
+  if(t.power===0){
+    cls='warn'; msgs.push('Sin PF de Poder todavía. Añade propiedades o técnicas contenidas.');
+  } else {
+    if(t.eff>desired.max){
+      cls='bad';
+      msgs.push(`⚠ PF efectivos (${t.eff}) superan el máximo de <b>${desired.name}</b> (${desired.max}). Añade requisitos, sube la rareza o reduce propiedades.`);
+    } else if(t.eff<desired.min){
+      cls='warn';
+      msgs.push(`↓ PF efectivos (${t.eff}) por debajo del mínimo de <b>${desired.name}</b> (${desired.min}).`);
+    } else {
+      msgs.push(`✓ Rareza mecánica correcta: <b>${rr.name}</b> (${rr.min}–${rr.max} PF efectivos).`);
+    }
+    // Verificar límite de PF de Poder
+    if(desired.maxPower<99999){
+      const powerLimit=desired.maxPower+t.curse;
+      if(t.power>powerLimit){
+        if(cls!=='bad') cls='bad';
+        msgs.push(`⚠ PF de Poder (${t.power}) supera el límite de <b>${desired.name}</b> incluyendo maldición (${desired.maxPower}+${t.curse}=${powerLimit}). Reduce propiedades o añade maldición suficiente.`);
+      } else if(t.power>desired.maxPower){
+        if(cls==='ok') cls='warn';
+        msgs.push(`ℹ PF de Poder (${t.power}) supera el límite base de ${desired.name} (${desired.maxPower}), pero la maldición lo permite (margen +${t.curse}).`);
+      }
+    }
+    // Requisitos limitados por el suelo
+    if(t.reqCapped){
+      if(cls==='ok') cls='warn';
+      msgs.push(`ℹ Requisitos recortados: los PF efectivos no pueden bajar de ${t.minEff} (mitad de ${t.power}, redondeada hacia arriba).`);
+    }
+  }
+  if(t.curse&&t.power>0) msgs.push(`ℹ Maldición: +${t.curse} PF de margen en el límite de PF de Poder. Comprueba que sus consecuencias sean reales en juego.`);
+
+  $('rarityBox').className=cls;
+  $('rarityBox').innerHTML=msgs.join('<br>');
+  $('basePreview').innerHTML=baseHtml(state.base);
+  $('baseMini').innerHTML=state.base?baseHtml(state.base):'Objeto personalizado.';
+  $('shortPreview').innerHTML=`<b>${$('objName').value||'(sin nombre)'}</b><br>${$('objType').value||'(sin tipo)'}<br>Rareza deseada: ${$('rarity').value}<br>Precio: ${$('price').value||'—'}`;
+}
+
+// ─── UI HELPERS ─────────────────────────────────────────────────────────────
+function baseHtml(item){
+  if(!item) return '<div class="warn">Objeto personalizado. Completa los datos manualmente.</div>';
+  let rows=[];
+  ['cat','type','damage','damageType','props','defense','dexLimit','bodyReq','stealth','capacity','cost','use'].forEach(k=>{
+    if(item[k]) rows.push(`<tr><th>${labelMap(k)}</th><td>${item[k]}</td></tr>`);
+  });
+  return `<table class="table">${rows.join('')}</table>`;
+}
+function labelMap(k){return {cat:'Categoría',type:'Tipo',damage:'Daño',damageType:'Tipo de daño',props:'Propiedades',defense:'Bono Defensa',dexLimit:'Límite Destreza',bodyReq:'Req. Cuerpo',stealth:'Penalización Sigilo',capacity:'Capacidad',cost:'Coste base',use:'Uso'}[k]||k;}
+
+function renderBaseList(){
+  const f=$('baseFilter').value, q=$('baseSearch').value.toLowerCase().trim();
+  const list=baseItems.filter(i=>(f==='Todas'||i.cat===f)&&(!q||[i.name,i.cat,i.type,i.props,i.use].join(' ').toLowerCase().includes(q)));
+  $('baseList').innerHTML=list.map(i=>`<div class="item-row" data-name="${i.name.replace(/"/g,'&quot;')}"><b>${i.name}</b><small>${i.cat}${i.cost?' · '+i.cost:''}</small></div>`).join('');
+  document.querySelectorAll('.item-row').forEach(el=>el.onclick=()=>selectBase(baseItems.find(i=>i.name===el.dataset.name)));
+}
+
+function selectBase(item){
+  state.base=item.name==='Objeto personalizado'?null:item;
+  if(item.name!=='Objeto personalizado'){
+    if(!$('objName').value) $('objName').value=item.name;
+    if(!$('objType').value) $('objType').value=item.type||item.cat;
+    if(!$('price').value) $('price').value=item.cost||'';
+  }
+  update();
+}
+
+function renderPropSelect(){
+  const c=$('propCatalog').value;
+  const props=propCatalog.filter(p=>p.cat===c);
+  $('propSelect').innerHTML=props.map((p,i)=>`<option value="${propCatalog.indexOf(p)}">${p.name} (${p.pf} PF)</option>`).join('');
+  syncPropCost();
+}
+
+function syncPropCost(){
+  const p=propCatalog[$('propSelect').value];
+  if(p){$('propCost').value=p.pf; $('propNote').textContent=p.note||''; $('propDetail').placeholder=p.note||'';}
+}
+
+function addProp(){
+  const p=propCatalog[$('propSelect').value];
+  if(!p) return;
+  state.props.push({name:p.name,pf:+$('propCost').value||0,detail:$('propDetail').value,note:p.note});
+  $('propDetail').value=''; renderLists(); update();
+}
+
+function addTech(){
+  const name=$('techName').value.trim()||'Técnica contenida';
+  const type=$('techType').value;
+  const uses=(type==='D'||type==='E')?'—':$('techUses').value;
+  state.techs.push({name,level:+$('techLevel').value,type,uses,res:$('techRes').value,act:$('techAct').value,pf:+$('techCost').value||0,effect:$('techEffect').value});
+  $('techName').value=''; $('techEffect').value=''; renderLists(); update();
+}
+
+function syncReqCost(){
+  const r=reqs[$('reqSelect').value];
+  if(r){$('reqCost').value=r.pf; $('reqNote').textContent=r.desc||''; $('reqDetail').placeholder=r.desc;}
+}
+
+function addReq(){
+  const r=reqs[$('reqSelect').value];
+  state.reqs.push({name:r.name,pf:+$('reqCost').value||0,detail:$('reqDetail').value,desc:r.desc});
+  $('reqDetail').value=''; renderLists(); update();
+}
+
+function addCurse(){
+  state.curses.push({name:$('curseName').value.trim()||'Maldición',pf:+$('curseCost').value||0,effect:$('curseEffect').value});
+  $('curseName').value=''; $('curseEffect').value=''; renderLists(); update();
+}
+
 function removeFrom(kind,i){state[kind].splice(i,1);renderLists();update();}
+
 function renderLists(){
-  $('propList').innerHTML=state.props.length?state.props.map((p,i)=>`<div class="entry"><div class="top"><b>${p.name}</b><button onclick="removeFrom('props',${i})">Eliminar</button></div><span class="tag">${p.pf} PF</span><div class="mini">${p.detail||p.note||''}</div></div>`).join(''):'<div class="mini">Sin propiedades.</div>';
-  $('techList').innerHTML=state.techs.length?state.techs.map((t,i)=>`<div class="entry"><div class="top"><b>${t.name}</b><button onclick="removeFrom('techs',${i})">Eliminar</button></div><span class="tag">Nivel ${t.level}</span><span class="tag">Tipo ${t.type}</span><span class="tag">${t.pf} PF</span><div class="mini">${t.effect||''}</div></div>`).join(''):'<div class="mini">Sin técnicas.</div>';
-  $('reqList').innerHTML=state.reqs.length?state.reqs.map((r,i)=>`<div class="entry"><div class="top"><b>${r.name}</b><button onclick="removeFrom('reqs',${i})">Eliminar</button></div><span class="tag">−${r.pf} PF</span><div class="mini">${r.detail||r.desc||''}</div></div>`).join(''):'<div class="mini">Sin requisitos.</div>';
+  $('propList').innerHTML=state.props.length?state.props.map((p,i)=>`<div class="entry"><div class="top"><b>${p.name}</b><button onclick="removeFrom('props',${i})">Eliminar</button></div><span class="tag${p.pf<0?' neg':''}">${p.pf>=0?'+':''}${p.pf} PF</span><div class="mini">${p.detail||p.note||''}</div></div>`).join(''):'<div class="mini">Sin propiedades.</div>';
+  $('techList').innerHTML=state.techs.length?state.techs.map((t,i)=>`<div class="entry"><div class="top"><b>${t.name}</b><button onclick="removeFrom('techs',${i})">Eliminar</button></div><span class="tag">Nv.${t.level}</span><span class="tag">Tipo ${t.type}</span>${t.uses!=='—'?`<span class="tag">${t.uses}</span>`:''}<span class="tag">+${t.pf} PF</span><div class="mini">${t.effect||''}</div></div>`).join(''):'<div class="mini">Sin técnicas.</div>';
+  $('reqList').innerHTML=state.reqs.length?state.reqs.map((r,i)=>`<div class="entry"><div class="top"><b>${r.name}</b><button onclick="removeFrom('reqs',${i})">Eliminar</button></div><span class="tag neg">−${r.pf} PF</span><div class="mini">${r.detail||r.desc||''}</div></div>`).join(''):'<div class="mini">Sin requisitos.</div>';
   $('curseList').innerHTML=state.curses.length?state.curses.map((c,i)=>`<div class="entry"><div class="top"><b>${c.name}</b><button onclick="removeFrom('curses',${i})">Eliminar</button></div><span class="tag">+${c.pf} PF margen</span><div class="mini">${c.effect||''}</div></div>`).join(''):'<div class="mini">Sin maldiciones.</div>';
 }
-function totals(){const prop=state.props.reduce((a,b)=>a+b.pf,0),tech=state.techs.reduce((a,b)=>a+b.pf,0),req=state.reqs.reduce((a,b)=>a+b.pf,0),curse=state.curses.reduce((a,b)=>a+b.pf,0);return {prop,tech,power:prop+tech,req,eff:Math.max(0,prop+tech-req),curse,allowed:prop+tech+curse};}
-function recommendedRarity(pf){return rareties.find(r=>pf>=r.min&&pf<=r.max)||rareties[0];}
-function update(){const t=totals();$('sumPower').textContent=t.power;$('sumReq').textContent='−'+t.req;$('sumEff').textContent=t.eff;$('sumCurse').textContent='+'+t.curse;const rr=recommendedRarity(t.eff);const desired=rareties.find(r=>r.name===$('rarity').value)||rr;let cls='ok',msg=`Rareza mecánica sugerida: <b>${rr.name}</b> (${rr.min}${rr.max>100?'+':'–'+rr.max} PF).`;if(t.eff===0){cls='warn';msg='Sin PF efectivos todavía. Añade propiedades o técnicas.'}else if(t.eff>desired.max){cls='bad';msg=`El objeto supera la rareza deseada. PF efectivos ${t.eff}, tope de ${desired.name}: ${desired.max}.`;}else if(t.eff<desired.min){cls='warn';msg=`El objeto está por debajo del rango de ${desired.name}. PF efectivos ${t.eff}, mínimo recomendado: ${desired.min}.`;}if(t.curse)msg+=` Las maldiciones otorgan +${t.curse} PF de margen narrativo; revisa que sus consecuencias sean reales.`;$('rarityBox').className=cls;$('rarityBox').innerHTML=msg;$('basePreview').innerHTML=baseHtml(state.base);$('baseMini').innerHTML=state.base?baseHtml(state.base):'Objeto personalizado.';$('shortPreview').innerHTML=`<b>${$('objName').value||'(sin nombre)'}</b><br>${$('objType').value||'(sin tipo)'}<br>Rareza deseada: ${$('rarity').value}<br>Precio: ${$('price').value||'—'}`;}
-function exportText(){const t=totals(), rr=recommendedRarity(t.eff);const base=state.base;let s='';s+=`# ${$('objName').value||'Objeto sin nombre'}\n\n`;s+=`**Tipo:** ${$('objType').value||'—'}\n`;s+=`**Rareza deseada:** ${$('rarity').value}\n`;s+=`**Rareza mecánica sugerida:** ${rr.name}\n`;s+=`**Precio:** ${$('price').value||'—'}\n`;s+=`**Disponibilidad:** ${$('availability').value||'—'}\n\n`;if(base){s+=`## Objeto base\n`;s+=`**Nombre base:** ${base.name}\n**Categoría:** ${base.cat}\n`;['damage','damageType','props','defense','dexLimit','bodyReq','stealth','capacity','cost','use'].forEach(k=>{if(base[k])s+=`**${labelMap(k)}:** ${base[k]}\n`});s+='\n';}
-s+=`## Concepto\n${$('concept').value||'—'}\n\n`;s+=`## Propiedades\n`;if(state.props.length)state.props.forEach(p=>{s+=`### ${p.name}\n**Coste:** ${p.pf} PF\n${p.detail||p.note||'—'}\n\n`});else s+='—\n\n';
-s+=`## Técnicas contenidas\n`;if(state.techs.length)state.techs.forEach(tc=>{s+=`### ${tc.name}\n**Nivel:** ${tc.level}\n**Tipo:** ${tc.type}\n**Usos / cargas:** ${tc.uses}\n**Coste de Resistencia:** ${tc.res||'—'}\n**Activación:** ${tc.act||'—'}\n**Coste:** ${tc.pf} PF\n**Efecto:** ${tc.effect||'—'}\n\n`});else s+='—\n\n';
-s+=`## Requisitos\n`;if(state.reqs.length)state.reqs.forEach(r=>{s+=`- **${r.name}:** −${r.pf} PF. ${r.detail||r.desc||''}\n`});else s+='—\n';s+='\n';
-s+=`## Maldiciones\n`;if(state.curses.length)state.curses.forEach(c=>{s+=`### ${c.name}\n**Margen:** +${c.pf} PF\n${c.effect||'—'}\n\n`});else s+='—\n\n';
-s+=`## Cálculo\n`;s+=`| Elemento | PF |\n|---|---:|\n| Propiedades | ${t.prop} |\n| Técnicas | ${t.tech} |\n| PF de Poder | ${t.power} |\n| Requisitos | −${t.req} |\n| PF efectivos | ${t.eff} |\n| Margen por maldiciones | +${t.curse} |\n\n`;s+=`## Historia\n${$('history').value||'—'}\n\n`;s+=`## Apariencia\n${$('appearance').value||'—'}\n\n`;s+=`## Notas de diseño\n${$('designNotes').value||'—'}\n`;return s;}
-function downloadTxt(){const text=exportText();const blob=new Blob([text],{type:'text/plain;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=($('objName').value||'objeto_papa').replace(/[^a-z0-9áéíóúñü_-]+/gi,'_')+'.txt';a.click();URL.revokeObjectURL(a.href)}
-function resetAll(){if(!confirm('¿Reiniciar todo el objeto?'))return;state={base:null,props:[],techs:[],reqs:[],curses:[]};document.querySelectorAll('input,textarea').forEach(e=>e.value='');$('rarity').selectedIndex=0;renderLists();selectBase(baseItems[0]);$('exportText').textContent='';}
+
+// ─── EXPORTAR ────────────────────────────────────────────────────────────────
+function exportText(){
+  const t=totals(), rr=recommendedRarity(t.eff);
+  const base=state.base;
+  let s='';
+  s+=`# ${$('objName').value||'Objeto sin nombre'}\n\n`;
+  s+=`**Tipo:** ${$('objType').value||'—'}\n`;
+  s+=`**Rareza deseada:** ${$('rarity').value}\n`;
+  s+=`**Rareza mecánica sugerida:** ${rr.name}\n`;
+  s+=`**Precio:** ${$('price').value||'—'}\n`;
+  s+=`**Disponibilidad:** ${$('availability').value||'—'}\n\n`;
+  if(base){
+    s+=`## Objeto base\n`;
+    ['cat','type','damage','damageType','props','defense','dexLimit','bodyReq','stealth','capacity','cost','use'].forEach(k=>{if(base[k])s+=`**${labelMap(k)}:** ${base[k]}\n`;});
+    s+='\n';
+  }
+  s+=`## Concepto\n${$('concept').value||'—'}\n\n`;
+  s+=`## Propiedades permanentes\n`;
+  if(state.props.length) state.props.forEach(p=>{s+=`### ${p.name}\n**Coste:** ${p.pf} PF\n${p.detail||p.note||'—'}\n\n`;});
+  else s+='—\n\n';
+  s+=`## Técnicas contenidas\n`;
+  if(state.techs.length) state.techs.forEach(tc=>{
+    s+=`### ${tc.name}\n**Nivel:** ${tc.level} · **Tipo:** ${tc.type}`;
+    if(tc.uses!=='—') s+=` · **Usos/Cargas:** ${tc.uses}`;
+    if(tc.type==='A') s+=` · **Resistencia por uso:** ${tc.res}`;
+    s+=`\n**Activación:** ${tc.act||'—'}\n**PF:** ${tc.pf}\n**Efecto:** ${tc.effect||'—'}\n\n`;
+  });
+  else s+='—\n\n';
+  s+=`## Requisitos\n`;
+  if(state.reqs.length) state.reqs.forEach(r=>{s+=`- **${r.name}** (−${r.pf} PF)${r.detail?' — '+r.detail:''}\n`;});
+  else s+='—\n'; s+='\n';
+  s+=`## Maldiciones\n`;
+  if(state.curses.length) state.curses.forEach(c=>{s+=`### ${c.name}\n**Margen:** +${c.pf} PF en límite de Poder\n${c.effect||'—'}\n\n`;});
+  else s+='—\n\n';
+  s+=`## Cálculo de PF\n`;
+  s+=`| Elemento | PF |\n|---|---:|\n`;
+  s+=`| Propiedades | ${t.prop} |\n`;
+  s+=`| Técnicas contenidas | ${t.tech} |\n`;
+  s+=`| **PF de Poder** | **${t.power}** |\n`;
+  s+=`| Requisitos | −${t.req} |\n`;
+  if(t.reqCapped) s+=`| *(Suelo aplicado: mín. ${t.minEff})* | |\n`;
+  s+=`| **PF efectivos** | **${t.eff}** |\n`;
+  if(t.curse) s+=`| Margen por maldición (+límite Poder) | +${t.curse} |\n`;
+  s+='\n';
+  s+=`## Historia\n${$('history').value||'—'}\n\n`;
+  s+=`## Apariencia\n${$('appearance').value||'—'}\n\n`;
+  s+=`## Notas de diseño\n${$('designNotes').value||'—'}\n`;
+  return s;
+}
+
+function downloadTxt(){
+  const text=exportText();
+  const blob=new Blob([text],{type:'text/plain;charset=utf-8'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download=($('objName').value||'objeto_papa').replace(/[^a-z0-9áéíóúñü_-]+/gi,'_')+'.txt';
+  a.click(); URL.revokeObjectURL(a.href);
+}
+
+function resetAll(){
+  if(!confirm('¿Reiniciar todo el objeto?')) return;
+  state={base:null,props:[],techs:[],reqs:[],curses:[]};
+  document.querySelectorAll('input,textarea').forEach(e=>e.value='');
+  $('rarity').selectedIndex=0; renderLists(); selectBase(baseItems[0]); $('exportText').textContent='';
+}
+
+// ─── INIT ────────────────────────────────────────────────────────────────────
+function init(){
+  document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>showTab(b.dataset.tab));
+
+  // Rareza
+  rareties.forEach(r=>$('rarity').add(new Option(`${r.name} (${r.min}${r.max>100?'+':'–'+r.max} PF)`,r.name)));
+  $('rarity').onchange=()=>{
+    const r=rareties.find(x=>x.name===$('rarity').value);
+    if(!$('price').value) $('price').value=r.price;
+    if(!$('availability').value) $('availability').value=r.availability;
+    update();
+  };
+
+  // Base
+  const cats=[...new Set(baseItems.map(i=>i.cat))];
+  $('baseFilter').innerHTML='<option value="Todas">Todas</option>'+cats.map(c=>`<option>${c}</option>`).join('');
+  $('baseFilter').onchange=renderBaseList; $('baseSearch').oninput=renderBaseList;
+  $('clearBase').onclick=()=>selectBase(baseItems[0]);
+
+  // Propiedades
+  const pcats=[...new Set(propCatalog.map(p=>p.cat))];
+  $('propCatalog').innerHTML=pcats.map(c=>`<option>${c}</option>`).join('');
+  $('propCatalog').onchange=renderPropSelect; $('propSelect').onchange=syncPropCost;
+  $('addProp').onclick=addProp;
+
+  // Técnicas
+  $('techLevel').onchange=syncTechCost; $('techType').onchange=syncTechCost;
+  $('techUses').onchange=syncTechCost; $('addTech').onclick=addTech;
+
+  // Requisitos
+  $('reqSelect').innerHTML=reqs.map((r,i)=>`<option value="${i}">${r.name} (−${r.pf} PF)</option>`).join('');
+  $('reqSelect').onchange=syncReqCost; $('addReq').onclick=addReq;
+
+  // Maldiciones
+  curseLevels.forEach(cl=>$('curseLevel').add(new Option(cl.name, cl.pf)));
+  $('curseLevel').onchange=()=>{$('curseCost').value=$('curseLevel').value;};
+
+  curseCatalog.forEach((c,i)=>$('curseTemplate').add(new Option(c.name, i)));
+  $('applyCurseTemplate').onclick=()=>{
+    const idx=+$('curseTemplate').value;
+    const c=curseCatalog[idx];
+    if(!c||c.pf===null) return;
+    const cleanName=c.name.replace(/\s*\(.*?\)\s*$/,'').trim();
+    $('curseName').value=cleanName;
+    $('curseEffect').value=c.effect;
+    $('curseCost').value=c.pf;
+    // Seleccionar nivel correspondiente
+    [...$('curseLevel').options].forEach((o,i)=>{if(+o.value===c.pf) $('curseLevel').selectedIndex=i;});
+  };
+  $('addCurse').onclick=addCurse;
+
+  // Identidad
+  ['objName','objType','price','availability','concept','history','appearance','designNotes'].forEach(id=>$(id).oninput=update);
+
+  // Export
+  $('refreshExport').onclick=()=>{$('exportText').textContent=exportText();};
+  $('copyExport').onclick=async()=>{const t=exportText();$('exportText').textContent=t;await navigator.clipboard.writeText(t);alert('Texto copiado al portapapeles.');};
+  $('downloadTxt').onclick=downloadTxt; $('resetAll').onclick=resetAll;
+
+  renderBaseList(); renderPropSelect(); syncTechCost(); syncReqCost();
+  $('curseCost').value=$('curseLevel').value;
+  selectBase(baseItems[0]);
+}
+
+function showTab(tab){
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  $(tab).classList.add('active');
+  document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));
+  if(tab==='export') $('exportText').textContent=exportText();
+}
+
 init();
 </script>
 </body>
